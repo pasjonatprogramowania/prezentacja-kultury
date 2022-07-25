@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># TOP 3 malo znanych kultur swiata
+</script></section><section ><section data-markdown><script type="text/template">
+## [Tidong](https://www.wikiwand.com/en/Tidung_people)
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/skVv6SM.png" alt="" ></img></p>
+
+</script></section><section data-markdown><script type="text/template">To rodzima grupa wywodząca się z północno-wschodniej części [Borneo](https://www.wikiwand.com/en/Borneo "Borneo") i okolicznych małych wysp. Mieszkają po obu stronach granicy [Malezji](https://www.wikiwand.com/en/Malaysia "Malaysia") i [Indonezji](https://www.wikiwand.com/en/Indonesia "Indonesia") .
+</script></section><section data-markdown><script type="text/template">
+Tidung mówi w języku Tidong, języku [północnoborneańskim](https://www.wikiwand.com/en/North_Bornean_languages). Tidong to tradycyjnie rolnicy uprawiający [rolnictwo typu cięcie i spalanie](https://www.wikiwand.com/en/Slash-and-burn) . Niektórzy są rybakami oceanicznymi. Uprawiają [słodkie ziemniaki](https://www.wikiwand.com/en/Sweet_potato) , [maniok](https://www.wikiwand.com/en/Cassava "Maniok") , [soczewicę](https://www.wikiwand.com/en/Lentils "soczewica") , owoce i warzywa. Ich metody uprawy są często oskarżane o to, że są główną przyczyną pożarów lasów w Kalimantanie.
+</script></section><section data-markdown><script type="text/template">
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/4ObJ5RY.png" alt="" ></img></p>
+
+
+</script></section><section data-markdown><script type="text/template">
+Język [Tidung](https://www.wikiwand.com/en/Tidung_language "Język Tidung") używany przez lud Tidung jest również częścią innego [języka Murutic](https://www.wikiwand.com/en/Murutic_language "język murutic") , który z kolei należy do [zachodnich języków malajo-polinezyjskich](https://www.wikiwand.com/en/Western_Malayo-Polynesian_languages). Język [Tidung](https://www.wikiwand.com/en/Tidung_language "Język Tidung") jest używany w różnych dialektach, a mianowicie:- 
+
+-   [Nonukan](https://www.wikiwand.com/en/Nonukan_Tidong_language "Język nonukan Tidong") , Penchangan, Sedalir, Tikal, Tarakan, [Sesayap](https://www.wikiwand.com/en/Sesayap_Tidong_language "Język Sesayap Tidong") i Sibuku dialekt w [Indonezji](https://www.wikiwand.com/en/Indonesia)
+-   Dialekt Tarakan i [Sesayap](https://www.wikiwand.com/en/Sesayap_Tidong_language "Język Sesayap Tidong") w [Sabah](https://www.wikiwand.com/en/Sabah) , [Malezja](https://www.wikiwand.com/en/Malaysia)
+
+</script></section><section data-markdown><script type="text/template"><p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/qH707jb.png" alt="|700" style="width: 700px"></img></p>
+
+
+</script></section><section data-markdown><script type="text/template">Tradycyjne terytoria ludu Tidung znajdują się nad [rzeką Sembakung](https://www.wikiwand.com/en/Sembakung_River) , [Północnym Kalimantanem](https://www.wikiwand.com/en/North_Kalimantan "Kalimantan Północny") i rzeką Sibuku w ich górnym biegu do ujścia na północ od [wyspy Tarakan](https://www.wikiwand.com/en/Tarakan_Island "Wyspa Tarakan") , w [Indonezji](https://www.wikiwand.com/en/Indonesia) stąd wzdłuż wybrzeża; na południe do ujścia rzeki Bolongan i na północ do [Tawau](https://www.wikiwand.com/en/Tawau "Śmiech") , [Sabah](https://www.wikiwand.com/en/Sabah "Sabah") , [Malezja](https://www.wikiwand.com/en/Malaysia "Malezja") , w tym port Cowie. Enklawa ludu Tidung położona nad rzeką Labuk, naprzeciwko miasta Klagan.
+</script></section><section data-markdown><script type="text/template">
+### Smieszna ciekawostka
+Wesele w indonezyjskiej społeczności Tidong zawiera tradycje, które są naprawdę wyjątkowe. Jednym ze zwyczajów jest to, że pan młody może zobaczyć twarz narzeczonej dopiero po zaśpiewaniu jej kilku piosenek miłosnych. Kurtyna oddzielająca parę jest podnoszona po spełnieniu tego wymogu. Zaskakujące jest to, że państwo młodzi nie mogą korzystać z toalety przez trzy dni i noce po ślubie.
+
+
+Ludzie Tidong wierzą, że zaspokojenie potrzeb fizjologicznych przed upływem trzech dób od zawarcia małżeństwa przyniesie pecha młodej parze. 
+</script></section></section><section ><section data-markdown><script type="text/template">
+## [Ghanaian](https://www.wikiwand.com/pl/Ghana)
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/n4Kxn9q.png" alt="" ></img></p>
+
+</script></section><section data-markdown><script type="text/template">państwo w zachodniej [Afryce](https://www.wikiwand.com/pl/Afryka) nad [Oceanem Atlantyckim](https://www.wikiwand.com/pl/Ocean_Atlantycki). Graniczy z [Togo](https://www.wikiwand.com/pl/Togo "Togo"), [Burkina Faso](https://www.wikiwand.com/pl/Burkina_Faso "Burkina Faso") i [Wybrzeżem Kości Słoniowej](https://www.wikiwand.com/pl/Wybrze%C5%BCe_Ko%C5%9Bci_S%C5%82oniowej "Wybrzeże Kości Słoniowej"). Nazwa kraju w języku Asante oznacza „Król – Wojownik”. Pochodzi od przedkolonialnego, średniowiecznego [Imperium Ghany](https://www.wikiwand.com/pl/Imperium_Ghany "Imperium Ghany"), które rozciągało się na terenach dzisiejszego [Mali](https://www.wikiwand.com/pl/Mali "Mali") i [Mauretanii](https://www.wikiwand.com/pl/Mauretania). Handel z [Europejczykami](https://www.wikiwand.com/pl/Europa "Europa") został po raz pierwszy nawiązany w XV w., natomiast przedkolonialne królestwo [Aszanti](https://www.wikiwand.com/pl/Aszanti) zachowało niepodległość do roku 1870, w którym to zostało skolonizowane przez [Wielką Brytanię](https://www.wikiwand.com/pl/Wielka_Brytania). Niepodległość odzyskała w roku 1957. Obecnie członek [Unii Afrykańskiej](https://www.wikiwand.com/pl/Unia_Afryka%C5%84ska "Unia Afrykańska") i [ECOWAS](https://www.wikiwand.com/pl/Wsp%C3%B3lnota_Gospodarcza_Pa%C5%84stw_Afryki_Zachodniej "Wspólnota Gospodarcza Państw Afryki Zachodniej").
+</script></section><section data-markdown><script type="text/template">
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/JJZmxEQ.png" alt="" ></img></p>
+
+
+</script></section><section data-markdown><script type="text/template">
+[Chrześcijaństwo](https://www.wikiwand.com/pl/Chrze%C5%9Bcija%C5%84stwo) jest największą religią w kraju, dominującą w jego południowej części. [Islam](https://www.wikiwand.com/pl/Islam "Islam") natomiast jest rozpowszechniony głównie w północnej Ghanie. Zgodnie ze spisem powszechnym przeprowadzonym w 2021 roku, osoby wyznań chrześcijańskich stanowią łącznie 71,3% ludności, w tym 49% [protestantów](https://www.wikiwand.com/pl/Protestantyzm "Protestantyzm") i 10% [katolików](https://www.wikiwand.com/pl/Katolicyzm "Katolicyzm")Wiara ta pojawiła się w Ghanie wraz z europejskimi kolonizatorami w XIV wieku
+
+</script></section><section data-markdown><script type="text/template">
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/BKeqGiB.png" alt="" ></img></p>
+
+</script></section><section data-markdown><script type="text/template">
+
+Ghana jest republiką należącą do [Wspólnoty Narodów](https://www.wikiwand.com/pl/Wsp%C3%B3lnota_Narod%C3%B3w) (od 1957 r.). Na czele państwa stoi prezydent (od 7 stycznia 2017 [Nana Akufo-Addo](https://www.wikiwand.com/pl/Nana_Akufo-Addo)), który sprawuje władzę wykonawczą. Parlament Ghany jest jednoizbowy i zdominowany przez 2 partie – Nową Partię Patriotyczną oraz Narodowy Kongres Demokratyczny. [Kofi Annan](https://www.wikiwand.com/pl/Kofi_Annan "Kofi Annan"), były sekretarz generalny ONZ pochodzi z Ghany.
+</script></section><section data-markdown><script type="text/template"></script></section></section><section ><section data-markdown><script type="text/template">
+## [Satere-Måwe](https://www.wikiwand.com/en/Maw%C3%A9_people)
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/uqdKczY.png" alt="" ></img></p>
+
+</script></section><section data-markdown><script type="text/template">Mawé , **znani** również jako **Sateré** lub **Sateré-Mawé** , to [rdzenni mieszkańcy](https://www.wikiwand.com/en/Indigenous_peoples_in_Brazil) Brazylii [żyjący](https://www.wikiwand.com/en/Brazil "Brazylia") w stanie [Amazonas](https://www.wikiwand.com/en/Amazonas_(Brazilian_state)) . Szacuje się, że ich populacja wynosi około 13 350. Sateré-Mawé jako pierwsi udomowili i wyhodowali [guaranę](https://www.wikiwand.com/en/Guaran%C3%A1) ,popularny środek pobudzający.
+</script></section><section data-markdown><script type="text/template">
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/2GY9iuW.png" alt="" ></img></p>
+
+
+</script></section><section data-markdown><script type="text/template">
+Nazwa „Sateré-Mawé” pochodzi od _Sateré_ , co oznacza „gąsienicę ognia” i _Mawé_ , co oznacza „inteligentną i ciekawą papugę”. 
+
+Nazywane są również Maué, Mawé, Mabue, Maragua, Sataré, Andira, Arapium. 
+</script></section><section data-markdown><script type="text/template">
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/hAXQVWK.png" alt="" ></img></p>
+
+</script></section><section data-markdown><script type="text/template">
+Kilka razy do roku przechodzą oni bolesny rytuał inicjacji, dzięki któremu mają stać się prawdziwymi wojownikami. Uczestniczą w nim nawet 12-letni chłopcy. Młodzieńcy na 10 minut wkładają ręce do specjalnych rękawic wypełnionych mrówkami z gatunku _paraponera clavata,_ nazywanymi też mrówkami pociskowymi (z ang. bulle ants).
+</script></section><section data-markdown><script type="text/template">
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://i.imgur.com/6dcRlEO.png" alt="" ></img></p>
+
+</script></section><section data-markdown><script type="text/template">
+Ból po ukąszeniu tego niebezpiecznego owada porównywalny jest z postrzałem z pistoletu i trwa non stop przez 24 godziny. Żaden z młodych mężczyzn nie stanie się prawdziwym wojownikiem dopóki nie założy rękawic. W dodatku nie wystarczy zrobić tego tylko raz. Wymóg to aż 20 razy! Rytuał trwa około 11 godzin, podczas których kandydaci muszą się zmierzyć z ogromnym bólem oraz paraliżem.
+</script></section></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+
+	if(isLight(bgColor)){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":false,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
